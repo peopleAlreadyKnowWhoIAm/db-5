@@ -1,0 +1,46 @@
+[
+    {
+        "email": "email@gmsss",
+        "name": "USerSjdjsk",
+        "preferedGenres": [
+            {
+                "id": 2
+            },
+            {
+                "id" : 4
+            }
+        ]
+    }
+    ,
+    {
+        "email": "email@gmsss",
+        "name": "USerSjdjsk",
+        "preferedGenres": [
+            {
+                "id": 2
+            },
+            {
+                "id" : 4
+            }
+        ],
+        "savedSongs":[
+            {
+                "id": 4
+            },
+            {
+                "id": 5
+            },
+            {
+                "id": 7
+            }
+        ],
+        "savedAlbums":[
+            {
+                "id":1
+            },
+            {
+                "id": 4
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "album": {
+            "id": 2
+        },
+        "authors": [
+            {
+                "id": 2
+            },
+            {
+                "id": 4
+            }
+        ],
+        "genre": {
+            "id": 1
+        },
+        "length": 123,
+        "name": "Hello"
+    }
+    ,
+    {
+        "album": {
+            "id": 4
+        },
+        "authors": [
+            {
+                "id": 2
+            },
+            {
+                "id": 8
+            },
+            {
+                "id": 5
+            }
+        ],
+        "genre": {
+            "id": 2
+        },
+        "length": 146,
+        "name": "Goodbye"
+    }
+]

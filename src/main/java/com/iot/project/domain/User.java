@@ -38,7 +38,7 @@ public class User {
 
     @ManyToMany
     @JoinTable(
-        name = "album_saved_by_user", 
+        name = "albums_saved_by_user", 
         joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false, unique = false), 
         inverseJoinColumns = @JoinColumn(name = "album_id", referencedColumnName = "id", nullable = false, unique = false)
     )

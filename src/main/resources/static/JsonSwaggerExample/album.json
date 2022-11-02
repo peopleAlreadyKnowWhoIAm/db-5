@@ -1,0 +1,36 @@
+[
+
+{
+  "authors": [
+    {
+      "id": 1
+    },
+    {
+      "id": 4
+    }
+  ],
+  "label": {
+    "id": 4
+  },
+  "name": "Big new album",
+  "yearOfPublishing": 2021
+}
+,
+{
+  "authors": [
+    {
+      "id": 6
+    },
+    {
+      "id": 1
+    }
+  ],
+  "label": {
+    "id": 4
+  },
+  "name": "Not Big new album",
+  "yearOfPublishing": 2032
+}
+
+
+]

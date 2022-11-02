@@ -17,7 +17,8 @@ public class LabelDtoAssembler implements RepresentationModelAssembler<Label, La
         LabelDto out = LabelDto.builder().id(entity.getId()).name(entity.getName()).build();
 
         Link selfLink = linkTo(methodOn(LabelController.class).getLabelById(out.getId())).withSelfRel();
-        out.add(selfLink);
+        Link albumsLink = linkTo(methodOn(LabelController.class).getAllAlbumsByLabel(out.getId())).withRel("albums");
+        out.add(selfLink, albumsLink);
         return out;
     }
 
