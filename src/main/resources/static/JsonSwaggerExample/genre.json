@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Gypsy rock",
+        "related": [
+            {
+                "id": 3
+            },
+            {
+                "id": 2
+            }
+        ]
+    }
+    ,
+    {
+        "name": "Modern gypsy rock",
+        "related": [
+            {
+                "id": 4
+            },
+            {
+                "id": 2
+            },
+            {
+                "id": 1
+            }
+        ]
+    }
+]
