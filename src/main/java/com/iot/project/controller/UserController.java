@@ -98,4 +98,22 @@ public class UserController {
         service.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @PostMapping("/gen")
+    public ResponseEntity<Void> saveUserWithGeneratedName(@RequestBody String email){
+        service.saveUserWithGeneratedName(email);
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @PostMapping("/gen/group")
+    public ResponseEntity<Void> pasteGeneratedValue(){
+        service.pasteGenratedData();
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @PostMapping("/tables")
+    public ResponseEntity<Void> generateDummyTablesUsingUserNames(){
+        service.generateDummyTablesUsingUserNames();
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
 }

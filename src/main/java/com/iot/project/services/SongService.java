@@ -8,4 +8,6 @@ public interface SongService extends GeneralCrudService<Song> {
    List<Song> findByNameStartingWith(String name);
 
    List<Song> findByGenreId(Integer genreId);
+
+   String getTheMaxLength();
 }

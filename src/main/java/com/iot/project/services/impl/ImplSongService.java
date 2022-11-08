@@ -57,5 +57,10 @@ public class ImplSongService implements SongService {
     public List<Song> findByGenreId(Integer genreId) {
         return rep.findByGenreId(genreId);
     }
+
+    @Override
+    public String getTheMaxLength() {
+        return rep.getTheMaxLength();
+    }
     
 }
