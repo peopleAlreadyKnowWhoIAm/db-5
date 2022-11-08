@@ -71,4 +71,10 @@ public class GenreController {
         service.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @PostMapping("/fill-related")
+    public ResponseEntity<Void> fillRelatedtable(){
+        service.fillRelatedTable();
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
 }

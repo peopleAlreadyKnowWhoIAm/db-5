@@ -1,6 +1,7 @@
 package com.iot.project.controller;
 
 import java.sql.SQLIntegrityConstraintViolationException;
+import java.sql.SQLSyntaxErrorException;
 
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
@@ -27,5 +28,10 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler{
     @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
     public ResponseEntity<String> handleInvalidInput(SQLIntegrityConstraintViolationException ex){
         return new ResponseEntity<>("The input data was invalid", HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(SQLSyntaxErrorException.class)
+    public ResponseEntity<String> handleInvalidSql(SQLSyntaxErrorException ex){
+        return new ResponseEntity<>("The procedure wasn't found", HttpStatus.SERVICE_UNAVAILABLE);
     }
 }

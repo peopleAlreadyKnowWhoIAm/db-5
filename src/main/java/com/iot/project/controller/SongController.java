@@ -76,4 +76,9 @@ public class SongController {
         service.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @GetMapping("/max-len")
+    public ResponseEntity<String> getMaxLen(){
+        return new ResponseEntity<>(service.getTheMaxLength(), HttpStatus.OK);
+    }
 }
