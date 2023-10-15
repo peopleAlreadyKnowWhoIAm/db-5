@@ -10,4 +10,9 @@ public interface UserService extends GeneralCrudService<User> {
 
     List<User> findByNameStartingWith(String name);
 
+    void saveUserWithGeneratedName(String email);
+
+    void pasteGenratedData();
+
+    void generateDummyTablesUsingUserNames();
 }
