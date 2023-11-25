@@ -52,4 +52,9 @@ public class ImplGenreService implements GenreService {
         return rep.findByNameStartingWith(name);
     }
 
+    @Override
+    public void fillRelatedTable() {
+       rep.fillRelatedTable(); 
+    }
+
 }

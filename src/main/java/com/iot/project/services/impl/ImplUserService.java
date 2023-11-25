@@ -59,5 +59,20 @@ public class ImplUserService implements UserService{
     public List<User> findByNameStartingWith(String name) {
         return rep.findByNameStartingWith(name);
     }
+
+    @Override
+    public void saveUserWithGeneratedName(String email) {
+        rep.saveUserWithGeneratedName(email); 
+    }
+
+    @Override
+    public void pasteGenratedData() {
+       rep.pasteGenratedData(); 
+    }
+
+    @Override
+    public void generateDummyTablesUsingUserNames() {
+       rep.generateDummyTablesUsingUserNames(); 
+    }
     
 }
